@@ -1,0 +1,209 @@
+﻿/*
+   New Perspectives on HTML and CSS
+   Tutorial 3
+   Case Problem 2
+
+   Mountain Wheels Text and Color Style
+   Author: Matthew Metcalf
+   Date:   10/29/2020
+
+   Filename:         mw_layout.css
+   Supporting Files: none
+
+*/
+
+/* Body style for the default font family */
+
+body {
+   font-family: Tahoma, Geneva, sans-serif;
+}
+
+
+
+/* Style for the article header element */
+
+#articleheader {
+   letter-spacing: 7px;
+   font-size: 18px;
+   font-weight: normal;
+   text-align: center;
+}
+
+
+
+/* Navigation list styles */
+nav {
+   background-color: rgb(125, 120, 89);
+}
+
+nav ul {
+   line-height: 3em;
+   list-style-type: none;
+}
+
+nav ul li a {
+   color: white;
+   color: rgba(255, 255, 255, 0.5);
+   text-decoration: none;
+}
+
+nav ul li:hover {
+   background-color: rgb(131, 121, 36);
+   list-style-image: url(wheelmarker.png);
+}
+
+nav ul li a:hover {
+   color: yellow;
+   color: rgba(255, 255, 255, 1);
+}
+
+
+
+
+/* Styles for the left section sidebar */
+
+#leftsection > p {
+   font-size: 22px;
+}
+
+/* Display the first line of the first paragraph in uppercase letters */
+
+#leftsection > p:first-of-type:first-line {
+   text-transform: uppercase;
+}
+
+
+
+/* Styles for block quotes */
+
+blockquote {
+   background-color: rgb(131, 121, 36);
+   color: white;
+   font-family: 'Comic Sans MS', Times, cursive;
+   font-size: 16px;
+}
+
+/* Add quotation marks before and after quoted material */
+blockquote p:before {
+   content: '"';
+}
+
+blockquote p:after {
+   content: '"';
+}
+
+
+
+
+/* Styles for the right section element */
+
+#rightsection h1 {
+   font-size: 22px;
+   font-weight: normal;
+   letter-spacing: 3px;
+   text-align: center;
+}
+
+#rightsection h2 {
+   font-size: 18px;
+   font-weight: normal;
+   text-align: right;
+}
+
+#rightsection p {
+   color: gray;
+   font-size: 14px;
+   text-align: justify;
+}
+
+
+
+/* Styles for the footer */
+
+footer address {
+   font-size: 16px;
+   font-style: normal;
+   text-align: center;
+}
+/*
+   New Perspectives on HTML and CSS
+   Tutorial 3
+   Case Problem 2
+
+   Mountain Wheels Layout Style
+   Author: Adriana Turchenko
+   Date:   3/1/2014
+
+   Filename:         mw_layout.css
+   Supporting Files: none
+
+*/
+
+/* Layout styles */
+
+
+body {
+   margin: 0px auto;
+   padding: 0px;
+   width: 900px;
+}
+
+header, footer {
+   margin: 0px auto;
+}
+
+nav {
+   float: left;
+   margin-right: 10px;
+   width: 150px;
+}
+
+#leftsection {
+   float: left;
+   margin-right: 15px;
+   width: 450px;
+}
+
+#rightsection {
+   float: left;
+   width: 200px;
+}
+
+#articleheader {
+   float: left;
+   width: 650px;
+}
+
+
+h1, h2 {
+   margin: 0px;
+   padding: 0px;
+}
+
+#articleheader h1 {
+   margin-bottom: 10px;
+}
+
+blockquote {
+   border: 1px solid black;
+   float: right;
+   padding: 20px;
+   width: 170px;
+
+   -moz-border-radius: 35px;
+   border-radius: 35px;
+   box-shadow:10px 10px 20px #000;
+   -webkit-box-shadow:10px 10px 20px #000;
+   -moz-box-shadow: 10px 10px 20px #000;
+}
+
+section p {
+   margin-top: 0px;
+   margin-bottom: 20px;
+}
+
+footer address {
+   border-top: 1px solid black;
+   clear: left;
+margin-bottom: 10px;
+}
